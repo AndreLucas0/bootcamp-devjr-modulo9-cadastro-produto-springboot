@@ -6,7 +6,7 @@ public class Product {
     private int id;
     private String name;
     private String description;
-    private int idCategory;
+    private Category category;
     private boolean promotion;
     private boolean newProduct;
     private double price;
@@ -19,12 +19,13 @@ public class Product {
     public Product() {}
 
 
-    public Product(int id, String name, String description, int idCategory, boolean promotion, boolean newProduct,
+
+    public Product(int id, String name, String description, Category category, boolean promotion, boolean newProduct,
             double price) {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.idCategory = idCategory;
+        this.category = category;
         this.promotion = promotion;
         this.newProduct = newProduct;
         this.price = price;
@@ -32,26 +33,28 @@ public class Product {
 
 
 
-    //Métodos
     public int getId() {
         return id;
     }
+
+
+
     public void setId(int id) {
         this.id = id;
     }
+
+
+
     public String getName() {
         return name;
     }
+
+
+
     public void setName(String name) {
         this.name = name;
     }
-    public double getPrice() {
-        return price;
-    }
-    
-    public void setPrice(double price) {
-        this.price = price;
-    }
+
 
 
     public String getDescription() {
@@ -59,19 +62,23 @@ public class Product {
     }
 
 
+
     public void setDescription(String description) {
         this.description = description;
     }
 
 
-    public int getIdCategory() {
-        return idCategory;
+
+    public Category getCategory() {
+        return category;
     }
 
 
-    public void setIdCategory(int idCategory) {
-        this.idCategory = idCategory;
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
+
 
 
     public boolean isPromotion() {
@@ -79,9 +86,11 @@ public class Product {
     }
 
 
+
     public void setPromotion(boolean promotion) {
         this.promotion = promotion;
     }
+
 
 
     public boolean isNewProduct() {
@@ -89,9 +98,25 @@ public class Product {
     }
 
 
+
     public void setNewProduct(boolean newProduct) {
         this.newProduct = newProduct;
     }
+
+
+
+    public double getPrice() {
+        return price;
+    }
+
+
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    
+    
 
     
 
